@@ -4,22 +4,238 @@
     margin: 0;
 }
 body{
-    background-color: cadetblue;
+    background-color: #fff;
+    transition: 500s;
 }
-.nav-content{
-    height: 300px;
-    width: 100%;
+body:hover{
+    background-color: #000;
+    transition: 3s;
+}
+.about{
     background-color: black;
+    color: #fff;
+    height: 200px;
+    width: 100%;
+    text-align: center;
 }
-.content-hi{
+
+.about h1{
+    padding-top: 30px;
+}
+
+.nav-content{
     height: 400px;
     width: 100%;
-    background-color: black;
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.content-hi{
+    height: 900px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    transition: 500s;
+    
+}
+.content-hi:hover{
+    background-color: #000;
+    transition: 2s;
 }
 .footer{
     height: 190px;
     width: 100%;
-    background-color: black;
+    background-color: #ffff;
     margin-top: 10px;
 }
+.nav-content .photo-nav{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+
+    
+}
+.nav-content .photo-nav::before{
+    content: '1';
+    font-size: 80px ;
+    position: absolute;
+    align-items: center;
+    top: 30%;
+    padding-left: 15%;
+    color: #fff;
+    left: 150px;    
+}
+.photo-nav img{
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 0 1em, 0 0 1em white;
+    opacity: 0;
+    transition: 500s;
+    position: relative;
+}
+.photo-nav img:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 1em, 0 0 1em black;
+    height: 100%;
+    width: 100%;
+    opacity: 1.0;
+    transition: 2s;
+    
+}
+.nav-content .content-nav-text1{
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+.content-nav-text1::before{
+    content: '2';
+    font-size: 80px;
+    position: absolute;
+    align-items: center;
+    top: 10%;
+    padding-left: 20%;
+    color: #000;
+    left: 150px;
+}
+.content-nav-text1 .content-text1-box1{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    background-color: #fff;
+    color: #fff;
+    transition: 500s;
+   
+}
+.content-nav-text1 .content-text1-box1:hover{
+    cursor: pointer;
+    background-color: #000;
+    color:#fff;
+    transition: 2s;
+}
+
+
+.content-nav-text1 .content-text1-box2{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    color: #fff;
+    transition: 500s;
+}
+.content-nav-text1 .content-text1-box2:hover{
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    transition: 2s;
+    cursor: pointer;
+}
+.content-nav-text1::after{
+    content: '3';
+    font-size: 80px;
+    position: absolute;
+    align-items: center;
+    top: 250px;
+    padding-left: 20%;
+    color: #000;
+    left: 150px;
+}
+
+.nav-content .content-nav-text2{
+    height: 100%;
+    width: 30%;
+    background-color: #000;
+    position: relative;
+    transition: 500s;
+    border-radius: 20px;
+}
+.nav-content .content-nav-text2:hover{
+    background-color: #fff;
+    transition: 2s;
+ 
+}
+.nav-content .content-nav-text2::before{
+    content: '4';
+    font-size: 80px;
+    position: absolute;
+    align-items: center;
+    top: 130px;
+    color: #fff;
+    left: 260px;
+
+
+}
+.text-project{
+    color: #fff;
+    height: 100px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    
+}
+ .content-hi-1{
+    height: 70%;
+    width: 24%;
+}
+#span{
+    height: 300px;
+    width: 200px;
+    padding-top: 100px;
+    background-color: transparent;
+
+}
+#span img{
+    transition: 2s;
+}
+#span img:hover{
+    transition: 2s ease-in-out;
+    transform: scale(1.4);
+}
+#span .figure{
+   background-color: transparent;
+}
+#span p{
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+.content-hi .figure{
+    height: 100%;
+    width: 100%;
+}
+.content-hi .figure img{
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.figure figcaption{
+    font-size: 30px;
+    padding-right: 25%;
+
+}
+.figure a{
+    text-decoration: none;
+    color: #212529bf;
+    width: 100%;
+    padding-right: 30px;
+    color: #fff;
+}
+.text-end{
+    margin-top: 20px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
